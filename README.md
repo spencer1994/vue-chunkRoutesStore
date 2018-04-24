@@ -10,8 +10,6 @@
 
 #### 不需要在`store/index.js`中写入modules，会自动检索`src/store/modules`下所有的js文件，自动注册到store中。
 
-#### 额外技巧：使用require.context也可以放到相应的components、mixins、filters、directives中减少重复export到外部的工作。
-
 >使用方法
 
 ``` js
