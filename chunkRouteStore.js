@@ -9,10 +9,10 @@ const getChunks = (modulesContext) => {
 
   return chunks
 }
-export default {
+module.exports = {
   install: (Vue, {router, routerContext, store, storeContext}) => {
     if (!router && !store) {
-      console.error('chunkRoutes need options: router or store')
+      console.error('chunkRouteStore need options: router or store')
       return
     }
     if (router) {
@@ -24,7 +24,7 @@ export default {
     if (store) {
       const storeChunks = getChunks(storeContext)
       Object.keys(storeChunks).forEach((item) => {
-        store.registerModule(item, {...storeChunks[item]})
+        store.registerModule(item, storeChunks[item])
       })
     }
   }
