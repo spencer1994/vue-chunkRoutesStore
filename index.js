@@ -12,7 +12,7 @@ const getChunks = (modulesContext) => {
 module.exports = {
   install: (Vue, {router, routerContext, store, storeContext}) => {
     if (!router && !store) {
-      console.error('chunkRouteStore need options: router or store')
+      console.error('auto-route-store need options: router or store')
       return
     }
     if (router) {

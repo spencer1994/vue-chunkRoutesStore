@@ -1,0 +1,19 @@
+{
+  "name": "ibox-auto-route-store",
+  "version": "1.0.0",
+  "description": "根据webpakc的上下文自动注册路由及vuex",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spencer1994/vue-chunkRoutesStore.git"
+  },
+  "author": "spencer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spencer1994/vue-chunkRoutesStore/issues"
+  },
+  "homepage": "https://github.com/spencer1994/vue-chunkRoutesStore#readme"
+}
