@@ -17,10 +17,10 @@
 import store from '~/store'
 import router from '~/routes'
 
-import chunkRoutesStore from './chunkRoutesStore'
+import autoRouteStore from './index'
 const routerContext = require.context('~/routes/modules', true, /\.js$/)
 const storeContext = require.context('~/store/modules', true, /\.js$/)
-Vue.use(chunkRoutesStore, {
+Vue.use(autoRouteStore, {
   router,
   routerContext,
   storeContext,
